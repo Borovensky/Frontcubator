@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>005</title>
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+</head>
+<body>
+	
+	<header>
+		<div class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+     				<a class="navbar-brand" href="#">Some Icon</a>
+    			</div>
+    			<button type="button" class="btn btn-default navbar-btn" style="float:right" data-toggle="modal" data-target=".myModal">Why are you?</button>
+    			<div class="modal fade myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  					<div class="modal-dialog modal-sm" role="document">
+   					<div class="modal-content" style="width:500px;padding:10px 10px;">
+   						<form class="form-horizontal">
+  								<div class="form-group">
+    								<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+    								<div class="col-sm-10">
+      								<input type="email" class="form-control email" id="inputEmail3" placeholder="Email">
+    								</div>
+  								</div>
+  								<div class="form-group">
+    								<label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+    								<div class="col-sm-10">
+      								<input type="password" class="form-control password" id="inputPassword3" placeholder="Password">
+    								</div>
+  								</div>
+  								<div class="form-group">
+    								<div class="col-sm-offset-2 col-sm-10">
+      								<button type="button" class="btn btn-primary logIn">Log in</button>
+      								<button type="button" class="btn btn-info signUp">Sign up</button>
+    								</div>
+  								</div>
+							</form>
+   					</div>
+   				</div>
+				</div>
+			</div>
+		</div>	
+	</header>
+	<section>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<div class="messages">
+						
+					</div>
+					<div class="someTextarea">
+						<textarea name="coment" class="textarea" style="width:100%; height: 50px"></textarea>
+						<button type="button" class="btn btn-primary send">Send</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<script id="messages-template" type="x-tmpl-mustache">
+	<div>{{ text }}</div>
+</script>
+
+<script src="common.js"></script>
+</body>
+</html>
