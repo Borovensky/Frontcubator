@@ -1,0 +1,28 @@
+.payment {
+  padding: 5px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.4);
+}
+.payment p {
+  font-weight: bold;
+}
+.payment small {
+  color: #777777;
+}
+.user {
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.4);
+}
+.user h4 {
+  font-size: 12px;
+}
+.user info {
+  padding-top: 10px;
+}
+.user info p {
+  font-size: 12px;
+}
+.user info small {
+  color: #777777;
+}
